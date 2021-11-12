@@ -1,7 +1,6 @@
 import click
 from src.logic import area, area_zone
 
-
 @click.command()
 @click.option(
     "--location",
@@ -16,7 +15,6 @@ def main(location, zone):
         area(location)
     if zone:
         area_zone(zone)
-
 
 if __name__ == "__main__":
     main()
